@@ -42,7 +42,7 @@ class SpaceJam(ShowBase):
                         model.setScale(scale_factor)
                         print(f"Normalized scale for {model_path}: {scale_factor:.2f}")
             else:
-                # REGULAR SCALING (5x for most objects)
+                # REGULAR SCALING (5x for most)
                 model.setScale(scale * 5)
             
             model.setPos(pos[0] * 5, pos[1] * 5, pos[2] * 5)  # Scale positions too
@@ -77,13 +77,13 @@ class SpaceJam(ShowBase):
         dlnp.setHpr(45, -60, 0)
         self.render.setLight(dlnp)
 
-        # CAMERA POSITION (SCALED UP 5X)
-        self.camera.setPos(0, -2000, 750)  # Originally (0, -400, 150) * 5
+        # CAMERA POSITION 
+        self.camera.setPos(0, -2000, 750)  
         self.camera.lookAt(0, 0, 0)
 
         # UNIVERSE BACKGROUND (SCALED UP 5X)
         universe = self.loader.loadModel(Filename.fromOsSpecific("Assets/Universe/Universe.obj"))
-        universe.setScale(7500)  # Originally 1500 * 5
+        universe.setScale(7500)  # Originally 1500
         universe.setTexture(self.loader.loadTexture(Filename.fromOsSpecific("Assets/Universe/starfield-in-blue.jpg")), 1)
         universe.setBin("background", 0)
         universe.setDepthWrite(False)
@@ -102,9 +102,9 @@ class SpaceJam(ShowBase):
         ]
 
         # ARRANGE PLANETS IN CIRCLE (SCALED UP 5X)
-        radius = 1750  # Originally 350 * 5
+        radius = 1750  # Originally 350
         angle_increment = 2 * pi / len(planet_data)
-        target_planet_size = 50  # Originally 10 * 5
+        target_planet_size = 50  # Originally 10
 
         for i, (name, model, tex) in enumerate(planet_data):
             angle = i * angle_increment
@@ -122,8 +122,8 @@ class SpaceJam(ShowBase):
             "Assets/SpaceStation1B/spaceStation.x",
             "Assets/SpaceStation1B/SpaceStation1_Dif2.png",
             scale=6,  # Original scale
-            pos=(0, 300, 0),  # Position will be multiplied by 5
-            normalize=False  # Don't normalize - keep original scale
+            pos=(0, 300, 0),  
+            normalize=False  
         )
         if not station:
             print("Space station failed to load")
@@ -133,8 +133,8 @@ class SpaceJam(ShowBase):
             "Assets/Dumbledore/Dumbledore.x",
             "Assets/Dumbledore/spacejet_C.png",
             scale=5,  # Original scale
-            pos=(0, 0, 0),  # Position will be multiplied by 5
-            normalize=False  # Don't normalize - keep original scale
+            pos=(0, 0, 0),  
+            normalize=False  
         )
         if not self.spaceship:
             print("Critical error: Player spaceship failed to load")
@@ -152,8 +152,8 @@ class SpaceJam(ShowBase):
             self.accept(key, self.set_key, [key, True])
             self.accept(f"{key}-up", self.set_key, [key, False])
 
-        self.cam_speed = 25  # Originally 5 * 5
-        self.zoom_step = 125  # Originally 25 * 5
+        self.cam_speed = 25  
+        self.zoom_step = 125  
 
     # SET KEY STATE
     def set_key(self, key, value):
