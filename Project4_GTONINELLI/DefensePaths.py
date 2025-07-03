@@ -1,4 +1,4 @@
-# GABRIEL F. TONINELLI - PROJECT3 - CSCI-1551
+# GABRIEL F. TONINELLI - PROJECT4 - CSCI-1551
 
 from panda3d.core import Vec3
 from math import sin, cos, pi
