@@ -249,7 +249,7 @@ class Spaceship(SphereCollideObject, DirectObject.DirectObject):
             scale=(0.275, 0.85, 0.035)  # Width, Y-scale, Height
         )
         self.crosshair.setTransparency(TransparencyAttrib.MAlpha)
-        self.crosshair.setAlphaScale(0.3)  # 50% transparent
+        self.crosshair.setAlphaScale(0.3)  
 
     def move_forward(self, keyDown):
         if keyDown:
