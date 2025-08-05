@@ -1,0 +1,92 @@
+Folder PATH listing for volume Windows
+Volume serial number is 6488-7CD2
+C:.
+|   directory.txt
+|   
++---DroneDefender
+|       DroneDefender.mtl
+|       DroneDefender.obj
+|       DroneDefender.wings
+|       DroneDefender.x
+|       Drones.jpg
+|       octotoad1_auv.png
+|       TC.jpg
+|       
++---Dumbledore
+|       Dumbledore.egg
+|       Dumbledore.x
+|       spacejet.3ds
+|       spacejet_C.png
+|       spacejet_N.png
+|       
++---Part-Efx
+|       basic_xpld_efx.ptf
+|       default_efx.ptf
+|       dust.png
+|       fireball-points.ptf
+|       fireball.ptf
+|       Particles_11-07-2020b.ptf
+|       Petesexplode.ptf
+|       smoke.png
+|       SP21-explosionIII.ptf
+|       SP21_fireball-II.ptf
+|       SP21_fireball-III.ptf
+|       SP21_fireball.ptf
+|       SP21_particles-V.ptf
+|       sparkle.png
+|       steam.png
+|       xpld_efx.ptf
+|       
++---Phaser
+|       phaser.egg
+|       phaser.x
+|       phaserII.jpg
+|       phaserII.x
+|       phaser_auv.jpg
+|       
++---Planets
+|   +---AlienPlanet
+|   |       AlienPlanet.mtl
+|   |       AlienPlanet.obj
+|   |       planet_Bog1200.png
+|   |       
+|   +---Earth
+|   |       Diffuse_2K.png
+|   |       Earth 2K.mtl
+|   |       Earth 2K.obj
+|   |       
+|   +---Mars
+|   |       Diffuse_2K.png
+|   |       Mars 2K.mtl
+|   |       Mars 2K.obj
+|   |       
+|   +---Mercury
+|   |       Diffuse_1K.png
+|   |       Mercury 1K.mtl
+|   |       Mercury 1K.obj
+|   |       
+|   +---Moon
+|   |       Diffuse_2K.png
+|   |       Moon 2K.mtl
+|   |       Moon 2K.obj
+|   |       
+|   \---Venus
+|           Diffuse_1K.png
+|           Venus_1K.mtl
+|           Venus_1K.obj
+|           
++---SpaceStation1B
+|       spaceStation.egg
+|       spaceStation.x
+|       SpaceStation1_Dif2.png
+|       SpaceStation1_NM.png
+|       
+\---Universe
+        protoPlanet.mtl
+        protoPlanet.obj
+        sphere1_auv.jpg
+        starfield-in-blue.jpg
+        Universe.mtl
+        Universe.obj
+        Universe.x
+        
