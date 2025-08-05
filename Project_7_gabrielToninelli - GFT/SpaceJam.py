@@ -188,7 +188,7 @@ class SpaceJam(ShowBase):
         for _ in range(swarm_size_1):
             Orbiter(self.loader, self.taskMgr, model_path, self.render,
                     "Orbiter", 40, texture_path, self.station.model, 4000, "Cloud",
-                    self.station.model, self.traverser, self.pusher, player_ref=self.ship, cloud_group=1)
+                    self.station.model, self.traverser, self.pusher, player_Sref=self.ship, cloud_group=1)
 
     def update_laser(self, task):
         if self.ship.laser_firing:

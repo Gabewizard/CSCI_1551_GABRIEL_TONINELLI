@@ -426,9 +426,9 @@ class Orbiter(SphereCollideObject):
             self.last_central_pos = self.centralObject.getPos()
 
         if self.orbitType == "mlb":
-            # Pure math-based baseball seams path — faster and more pronounced
-            t = task.time * (self.velocity * 20.0)  # Speed up 5x
-            k = 2.2  # Slight lobe offset for stitching look
+            # math-based baseball seams path
+            t = task.time * (self.velocity * 20.0)  # Speed up 20x
+            k = 2.2  
             r = self.orbitRadius
 
             x = r * math.cos(t) * math.cos(k * t)
